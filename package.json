@@ -1,0 +1,26 @@
+{
+    "name": "dealii-prm",
+    "displayName": "dealii-prm",
+    "description": "Syntax highlighting for deal.II parameter files.",
+    "version": "0.0.1",
+    "publisher": "davydden",
+    "engines": {
+        "vscode": "^1.21.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "dealii-prm",
+            "aliases": ["deal.II parameter file", "dealii-prm"],
+            "extensions": [".prm",".prm.in"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "dealii-prm",
+            "scopeName": "source.dealii-prm",
+            "path": "./syntaxes/dealii-prm.tmLanguage.json"
+        }]
+    }
+}
