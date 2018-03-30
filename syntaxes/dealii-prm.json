@@ -1,0 +1,63 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "scopeName": "source.dealii",
+  "name": "deal.II parameter file",
+  "patterns": [
+    {
+      "match": "(?:\\s*)#.*\n",
+      "name": "comment.line"
+    },
+    {
+      "match": "(?:\\s*)(subsection)(?:\\s*)(.+?)(?:\\s*)(#.*)?\\n",
+      "captures": {
+        "1": {
+          "name": "keyword.control.dealii"
+        },
+        "2": {
+          "name": "string.unquoted"
+        },
+        "3": {
+          "name": "comment.line"
+        }
+      }
+    },
+    {
+      "match": "(?:\\s*)(include)(?:\\s*)(.+?)(?:\\s*)(#.*)?\\n",
+      "captures": {
+        "1": {
+          "name": "keyword.modifier.dealii"
+        },
+        "2": {
+          "name": "variable.other"
+        },
+        "3": {
+          "name": "comment.line"
+        }
+      }
+    },
+    {
+      "match": "(?:\\s*)(end)(?:\\s*)\\n",
+      "name": "keyword.modifier.dealii"
+    },
+    {
+      "match": "(?:\\s*)(set) ?(.+?)(?:\\s+?(=)\\s+?)(.+?)(#.*)?\\n",
+      "captures": {
+        "1": {
+          "name": "keyword.other.command.dealii"
+        },
+        "2": {
+          "name": "constant.other.type"
+        },
+        "3": {
+          "name": "keyword.operator.symbols.matlab"
+        },
+        "4": {
+          "name": "variable.other"
+        },
+        "5": {
+          "name": "comment.line"
+        }
+      }
+    }
+  ]
+}

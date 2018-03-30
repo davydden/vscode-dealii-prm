@@ -19,8 +19,8 @@
         }],
         "grammars": [{
             "language": "dealii-prm",
-            "scopeName": "source.dealii-prm",
-            "path": "./syntaxes/dealii-prm.tmLanguage.json"
+            "scopeName": "source.dealii",
+            "path": "./syntaxes/dealii-prm.json"
         }]
     }
 }
