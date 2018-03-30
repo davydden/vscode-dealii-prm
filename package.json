@@ -1,6 +1,6 @@
 {
     "name": "dealii-prm",
-    "displayName": "dealii-prm",
+    "displayName": "deal.II parameter file",
     "description": "Syntax highlighting for deal.II parameter files.",
     "version": "0.0.1",
     "publisher": "davydden",
